@@ -5,7 +5,7 @@ import { get } from "lodash";
 import styled from "styled-components";
 import { FaBtc } from "react-icons/fa";
 
-const BASE_URL = `https://api.coindesk.com/v1/bpi/currentprice.json`;
+const BASE_URL = `https://api.coindesk.com/v1/bpi/currentprice.json`; //Enocta tarafından verilen api
 
 function useForceUpdate() {
   const [value, setValue] = useState(0);
@@ -58,7 +58,7 @@ const CurrencyAmountInput = () => {
       {loading ? (
         <Loading
           src="https://media.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif"
-          alt="Loading..."
+          alt="Yükleniyor..."
         />
       ) : (
         <>
@@ -85,8 +85,8 @@ const CurrencyAmountInput = () => {
             displaySelectedItem={displaySelectedItem}
           />
           <br />
-          <h5 style={{ color: "gray" }}>
-            Last currency rates update: {currencyInfo.time.updated}
+          <h5 style={{ color: "red" }}>
+            Döviz kurları güncel zamanı: {currencyInfo.time.updated}
           </h5>
 
           <br />
@@ -110,7 +110,7 @@ const Loading = styled.img`
 `;
 const Form = styled.form`
   text-align: center;
-  background: rgb(242, 169, 0);
+  background: #969E28;
   margin-top: 1rem;
   padding-top: 2rem;
   border-radius: 0 50px 0 0;

@@ -4,9 +4,13 @@ import styled from "styled-components";
 
 function App() {
   return (
-    <AppContainer>
-      <CurrencyForm />
-    </AppContainer>
+    <div>
+      <div>Kripto Takip Uygulaması | Enocta | Halil İbrahim </div>
+      <AppContainer>
+        <CurrencyForm />
+      </AppContainer>
+  </div>
+    
   );
 }
 

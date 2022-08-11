@@ -19,10 +19,10 @@ const CurrencyDropDownMenu = (props) => {
 
   return (
     <DropDownContainer>
-      <b>Add currency:</b>
+      <b>Para birimi ekleyiniz:</b>
       <SelectMenu style={{ width: "170px" }}>
         <Select
-          placeholder="Select currency..."
+          placeholder="Para birimini seçin..."
           value={selectedCurrency}
           selected={currencyOptionsForSelect === selectedCurrency}
           options={currencyOptionsForSelect}
@@ -30,7 +30,7 @@ const CurrencyDropDownMenu = (props) => {
         />
       </SelectMenu>
       <Button type="submit" onClick={displaySelectedItem}>
-        Add
+        EKLE
       </Button>
     </DropDownContainer>
   );
