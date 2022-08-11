@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CurrencyForm from "./components/currencyForm/CurrencyInputForm";
+import styled from "styled-components";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <CurrencyForm />
+    </AppContainer>
   );
 }
 
 export default App;
+
+const AppContainer = styled.section`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
