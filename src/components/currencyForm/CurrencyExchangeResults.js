@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { TiDelete } from "react-icons/ti";
-import StatusMessage from "../StatusMessage";
+import StatusMessage from "../statusMessage";
 
 const CurrencyExchangeResults = (props) => {
   const { currencyRates, bitcoinsAmount, removeItem } = props;
